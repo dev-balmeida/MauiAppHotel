@@ -75,7 +75,8 @@
                     x:Name="pck_quarto"
                     Title="Selecione sua Acomodação"
                     ItemDisplayBinding="{Binding Descricao}"
-                    BackgroundColor="Brown">
+                    BackgroundColor="Brown"
+                    TextColor="AntiqueWhite">
                 </Picker>
 
 
