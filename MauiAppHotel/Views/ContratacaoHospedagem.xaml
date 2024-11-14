@@ -66,31 +66,39 @@
                     </Stepper>
                 </Grid>
 
-                <Label
-                    Text="Escolha sua Suíte"
-                    TextColor="Brown">
-                </Label>
-
-                <Picker
-                    x:Name="pck_quarto"
-                    Title="Selecione sua Acomodação"
-                    ItemDisplayBinding="{Binding Descricao}"
-                    BackgroundColor="Brown"
-                    TextColor="AntiqueWhite">
-                </Picker>
-
-
                 <Frame
                     Padding="10"
                     Margin="10">
-                    <VerticalStackLayout>
-                        <Label 
-                            Margin="10,0,0,0"
-                            Text="Período da Estadia"
-                            TextColor="Brown">                            
+                    <VerticalStackLayout Spacing="10">
+                        <Label
+                            Text="Escolha sua Suíte"
+                            TextColor="Brown"
+                            TextTransform="Uppercase"
+                            FontSize="Micro">
                         </Label>
 
-                        <HorizontalStackLayout>
+                        <Picker
+                            x:Name="pck_quarto"
+                            Title="Selecione sua Acomodação"
+                            ItemDisplayBinding="{Binding Descricao}"
+                            BackgroundColor="Brown"
+                            TextColor="AntiqueWhite">
+                        </Picker>
+                    </VerticalStackLayout>
+                </Frame>
+               
+                <Frame
+                    Padding="10"
+                    Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Label                            
+                            Text="Período da Estadia"
+                            TextColor="Brown"
+                            TextTransform="Uppercase"
+                            FontSize="Micro">                            
+                        </Label>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label 
                                 Text="Check-in:"
                                 TextColor="Brown"
@@ -106,7 +114,7 @@
                             </DatePicker>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label
                                 Text="Check-out:"
                                 TextColor="Brown"
@@ -124,8 +132,10 @@
                 </Frame>
 
                 <Button
-                    Text="Avançar" Clicked="Button_Clicked"
-                    BackgroundColor="Brown">                    
+                    Text="Avançar" 
+                    Clicked="Button_Clicked"
+                    BackgroundColor="Brown"
+                    HorizontalOptions="Center">                    
                 </Button>
 
             </VerticalStackLayout>
